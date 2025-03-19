@@ -66,9 +66,12 @@ export const SecondContainer = styled.div<{ isVisible: boolean }>`
   left: 0;
   transform: ${({ isVisible }) => (isVisible ? 'translateY(0)' : 'translateY(-100%)')};
   transition: transform 0.6s ease-in-out;
-
   .animated-content {
     animation: ${moveUpwards} 3s infinite ease-in-out;
+  }
+
+  @media(max-width: 675px) {
+    justify-content: space-around;
   }
 `;
 
