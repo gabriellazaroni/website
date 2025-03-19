@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import homeIcon from '../assets/home.svg';
 import projectsIcon from '../assets/projects.svg';
 import toolsIcon from '../assets/tools.svg';
@@ -17,7 +17,6 @@ import {
   BoldText,
   CubeAndTitleContainer,
   CubeContainer,
-  Cursor,
   ExpAndTitleContainer,
   ExpContainer,
   ExpProjectsHoursContainer,
@@ -42,7 +41,6 @@ import { MediumRotatingCube } from '../components/RotatingCube/MediumRotationCub
 export const HomePage = () => {
   const [isSecondVisible, setIsSecondVisible] = useState(true);
   const [isFlashing, setIsFlashing] = useState(false);
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const [showMenu, setShowMenu] = useState(false);
 
   const handleHideSecondContainer = () => {
@@ -68,16 +66,6 @@ export const HomePage = () => {
       aboutSectionHomeRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setCursorPos({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
 
   return (
     <BackgroundContainer>
@@ -178,7 +166,6 @@ export const HomePage = () => {
             </ExpContainer>
           </ExpProjectsHoursContainer>
         </ExpAndTitleContainer>
-        <Cursor x={cursorPos.x} y={cursorPos.y} />
         <FlashEffect isFlashing={isFlashing} />
         <SecondContainer isVisible={isSecondVisible}>
           <NameContainer>

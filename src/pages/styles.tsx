@@ -25,27 +25,6 @@ export const MainContainer = styled.div`
 export const CubeContainer = styled(motion.div) <VisibilityProps>`
 `
 
-export const Cursor = styled.div<{ x: number; y: number }>`
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  position: fixed;
-  top: ${({ y }) => y}px;
-  left: ${({ x }) => x}px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 10000;
-
-  box-shadow: 
-    0 0 100px rgba(255, 255, 255, 0.8), 
-    0 0 100px rgba(255, 255, 255, 0.6), 
-    0 0 100px rgba(255, 255, 255, 0.4), 
-    0 0 100px rgba(255, 255, 255, 0.2);
-
-  filter: blur(10px);
-  transition: transform 0.1s ease-out;
-`;
-
 const moveUpwards = keyframes`
   0% {
     transform: translateY(0);
