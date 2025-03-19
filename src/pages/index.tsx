@@ -207,7 +207,14 @@ export const HomePage = () => {
               </AboutMeText>
             </AboutDescriptionContainer>
           </AbountText>
-          <MediumRotatingCube />
+          <CubeContainer
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
+            transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
+            isVisible={showMenu}
+          >
+            <MediumRotatingCube />
+          </CubeContainer>
         </AboutContainer>
       </MainContainer>
     </BackgroundContainer >
