@@ -328,3 +328,9 @@ export const AboutMeText = styled.p`
     text-align: center;
   }
 `
+
+export const DisplayNoneCube = styled(motion.div) <VisibilityProps>`
+  @media(max-width: 675px) {
+    display: none;
+  }
+`

@@ -17,6 +17,7 @@ import {
   BoldText,
   CubeAndTitleContainer,
   CubeContainer,
+  DisplayNoneCube,
   ExpAndTitleContainer,
   ExpContainer,
   ExpProjectsHoursContainer,
@@ -70,7 +71,7 @@ export const HomePage = () => {
   return (
     <BackgroundContainer>
       <MainContainer ref={aboutSectionHomeRef}>
-        {/* <MenuContainer>
+        <MenuContainer>
           <HeaderMenu
             initial={{ opacity: 0, y: -150 }}
             animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : -100 }}
@@ -96,7 +97,7 @@ export const HomePage = () => {
               <Icon src={contactIcon} />
             </IconContainer>
           </HeaderMenu>
-        </MenuContainer> */}
+        </MenuContainer>
         <ExpAndTitleContainer>
           <TitleContainer>
             <CubeAndTitleContainer>
@@ -189,14 +190,14 @@ export const HomePage = () => {
       </MainContainer>
       <MainContainer ref={aboutSectionRef}>
         <AboutContainer>
-          <CubeContainer
+          <DisplayNoneCube
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
             transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
             isVisible={showMenu}
           >
             <MediumRotatingCube />
-          </CubeContainer>
+          </DisplayNoneCube>
           <AbountText>
             I believe in a user centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users.
             <AboutDescriptionContainer>
@@ -211,14 +212,14 @@ export const HomePage = () => {
               </AboutMeText>
             </AboutDescriptionContainer>
           </AbountText>
-          {/* <CubeContainer
+          <DisplayNoneCube
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
             transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
             isVisible={showMenu}
           >
             <MediumRotatingCube />
-          </CubeContainer> */}
+          </DisplayNoneCube>
         </AboutContainer>
       </MainContainer>
     </BackgroundContainer >
