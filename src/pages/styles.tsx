@@ -272,11 +272,13 @@ export const ExpAndTitleContainer = styled.div`
 export const AboutContainer = styled.div`
   display: flex;
   align-items: center;
-  padding: 200px 0px 0px 100px;
+  /* padding: 200px 0px 0px 0px;   */
+  height: 100vh;
+  justify-content: center;
   @media(max-width: 675px) {
     flex-direction: column;
-    padding: 50px 20px 0px 20px;
-    justify-content: space-around;
+    padding: 40px 20px 0px 20px;
+    justify-content: center;
   }
 `
 
