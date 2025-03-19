@@ -17,7 +17,7 @@ import {
   BoldText,
   CubeAndTitleContainer,
   CubeContainer,
-  DisplayNoneCube,
+  // DisplayNoneCube,
   ExpAndTitleContainer,
   ExpContainer,
   ExpProjectsHoursContainer,
