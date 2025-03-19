@@ -7,19 +7,16 @@ interface VisibilityProps {
 }
 
 export const BackgroundContainer = styled.div`
-  height: 100vh;
   background: url(${img}) no-repeat;
   background-position: right top;
   background-color: #0c0c0c;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 `;
 
 export const MainContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  scroll-snap-align: start;
 `;
 
 export const CubeContainer = styled(motion.div) <VisibilityProps>`
@@ -276,7 +273,6 @@ export const AboutContainer = styled.div`
   display: flex;
   align-items: center;
   /* padding: 200px 0px 0px 0px;   */
-  height: 100vh;
   justify-content: center;
   @media(max-width: 675px) {
     flex-direction: column;

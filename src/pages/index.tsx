@@ -188,40 +188,38 @@ export const HomePage = () => {
           </WelcomeAndIconContainer>
         </SecondContainer>
       </MainContainer>
-      <MainContainer ref={aboutSectionRef}>
-        <AboutContainer>
-          <DisplayNoneCube
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
-            transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
-            isVisible={showMenu}
-          >
-            <MediumRotatingCube />
-          </DisplayNoneCube>
-          <AbountText>
-            I believe in a user centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users.
-            <AboutDescriptionContainer>
-              <BoldText>I'm Gabriel.</BoldText>
-              <AboutMeText>
-                I'm a frontend web developer dedicated to turning ideas into creative solutions.
-                I specialize in creating seamless and intuitive user experiences.
-                My approach focuses on creating scalable, high-performing solutions tailored
-                to both user needs and business objectives. By prioritizing performance, accessibility,
-                and responsiveness, I strive to deliver experiences that not only engage users but
-                also drive tangible results.
-              </AboutMeText>
-            </AboutDescriptionContainer>
-          </AbountText>
-          <DisplayNoneCube
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
-            transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
-            isVisible={showMenu}
-          >
-            <MediumRotatingCube />
-          </DisplayNoneCube>
-        </AboutContainer>
-      </MainContainer>
+      <AboutContainer ref={aboutSectionRef}>
+        <DisplayNoneCube
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
+          transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
+          isVisible={showMenu}
+        >
+          <MediumRotatingCube />
+        </DisplayNoneCube>
+        <AbountText>
+          I believe in a user centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users.
+          <AboutDescriptionContainer>
+            <BoldText>I'm Gabriel.</BoldText>
+            <AboutMeText>
+              I'm a frontend web developer dedicated to turning ideas into creative solutions.
+              I specialize in creating seamless and intuitive user experiences.
+              My approach focuses on creating scalable, high-performing solutions tailored
+              to both user needs and business objectives. By prioritizing performance, accessibility,
+              and responsiveness, I strive to deliver experiences that not only engage users but
+              also drive tangible results.
+            </AboutMeText>
+          </AboutDescriptionContainer>
+        </AbountText>
+        <DisplayNoneCube
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
+          transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
+          isVisible={showMenu}
+        >
+          <MediumRotatingCube />
+        </DisplayNoneCube>
+      </AboutContainer>
     </BackgroundContainer >
   );
 };
