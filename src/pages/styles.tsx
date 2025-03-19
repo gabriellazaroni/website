@@ -7,16 +7,19 @@ interface VisibilityProps {
 }
 
 export const BackgroundContainer = styled.div`
+  height: 100dvh;
   background: url(${img}) no-repeat;
   background-position: right top;
   background-color: #0c0c0c;
   scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 `;
 
 export const MainContainer = styled.div`
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
+  scroll-snap-align: start;
 `;
 
 export const CubeContainer = styled(motion.div) <VisibilityProps>`
@@ -48,7 +51,7 @@ const moveUpwards = keyframes`
 
 export const SecondContainer = styled.div<{ isVisible: boolean }>`
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background: rgba(0, 0, 0, 0.27);
   backdrop-filter: blur(10px);
   display: flex;
@@ -120,7 +123,7 @@ export const FlashEffect = styled.div<{ isFlashing: boolean }>`
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background: white;
   opacity: ${({ isFlashing }) => (isFlashing ? 1 : 0)};
   transition: opacity 0.3s ease-in-out;
@@ -262,7 +265,7 @@ export const NumberExpTitle = styled(motion.h1) <VisibilityProps>`
 export const ExpAndTitleContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  height: 100dvh;
   @media(max-width: 675px) {
    flex-direction: column;
    justify-content: space-around;;
@@ -273,6 +276,7 @@ export const AboutContainer = styled.div`
   display: flex;
   align-items: center;
   /* padding: 200px 0px 0px 0px;   */
+  height: 100dvh;
   justify-content: center;
   @media(max-width: 675px) {
     flex-direction: column;
