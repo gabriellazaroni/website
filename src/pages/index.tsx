@@ -208,7 +208,7 @@ export const HomePage = () => {
             </AboutDescriptionContainer>
           </AbountText>
           <CubeContainer> {/* Ajuste o espaçamento do cubo */}
-            <LargeRotatingCube />
+            <MediumRotatingCube />
           </CubeContainer>
         </AboutContainer>
       </MainContainer>
