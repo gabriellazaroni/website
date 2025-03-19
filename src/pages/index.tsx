@@ -70,7 +70,7 @@ export const HomePage = () => {
   return (
     <BackgroundContainer>
       <MainContainer ref={aboutSectionHomeRef}>
-        <MenuContainer>
+        {/* <MenuContainer>
           <HeaderMenu
             initial={{ opacity: 0, y: -150 }}
             animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : -100 }}
@@ -92,14 +92,11 @@ export const HomePage = () => {
             <IconContainer>
               <Icon src={expIcon} />
             </IconContainer>
-            {/* <IconContainer>
-              <Icon src={questionsIcon} />
-            </IconContainer> */}
             <IconContainer>
               <Icon src={contactIcon} />
             </IconContainer>
           </HeaderMenu>
-        </MenuContainer>
+        </MenuContainer> */}
         <ExpAndTitleContainer>
           <TitleContainer>
             <CubeAndTitleContainer>
