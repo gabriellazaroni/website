@@ -275,7 +275,8 @@ export const AboutContainer = styled.div`
   padding: 200px 0px 0px 100px;
   @media(max-width: 675px) {
     flex-direction: column;
-    padding: 80px 20px 0 20px;  
+    padding: 120px 20px 0px 20px;
+    justify-content: space-around;
   }
 `
 

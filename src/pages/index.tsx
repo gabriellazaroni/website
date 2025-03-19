@@ -212,14 +212,6 @@ export const HomePage = () => {
           </CubeContainer>
         </AboutContainer>
       </MainContainer>
-      <MainContainer>
-        <AboutContainer>
-          <AbountText>
-            I believe in a user centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users.
-
-          </AbountText>
-        </AboutContainer>
-      </MainContainer>
     </BackgroundContainer >
   );
 };
