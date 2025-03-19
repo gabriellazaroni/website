@@ -12,6 +12,12 @@ export const GlobalStyle = createGlobalStyle`
     --purple: #4e2b6e;
     --purple-100: #904ceb;
 
+    --gray-100: #fafafc;
+    --gray-200: #f5f5f7;
+    --gray--700: #6e6e73;
+    --gray-800: #333336;
+    --gray-900: #1d1d1f;
+
     --font-xxxxl: clamp(1.75rem, 5vw, 3.75rem); // 60px novo
     --font-xxxl: clamp(1rem, 20vw, 2.5rem); // 40px
     --font-xxl: clamp(1.5rem, 7vw, 2.25rem); // 36px

@@ -188,16 +188,16 @@ export const HomePage = () => {
           </WelcomeAndIconContainer>
         </SecondContainer>
       </MainContainer>
-      <MainContainer ref={aboutSectionRef}>
+      <MainContainer ref={aboutSectionRef} style={{ background: '#161617' }}>
         <AboutContainer>
-          <DisplayNoneCube
+          {/* <DisplayNoneCube
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
             transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
             isVisible={showMenu}
           >
             <MediumRotatingCube />
-          </DisplayNoneCube>
+          </DisplayNoneCube> */}
           <AbountText>
             I believe in a user centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users.
             <AboutDescriptionContainer>
@@ -212,14 +212,14 @@ export const HomePage = () => {
               </AboutMeText>
             </AboutDescriptionContainer>
           </AbountText>
-          <DisplayNoneCube
+          <CubeContainer
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
             transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
             isVisible={showMenu}
           >
             <MediumRotatingCube />
-          </DisplayNoneCube>
+          </CubeContainer>
         </AboutContainer>
       </MainContainer>
     </BackgroundContainer >

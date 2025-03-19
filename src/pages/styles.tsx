@@ -8,9 +8,9 @@ interface VisibilityProps {
 
 export const BackgroundContainer = styled.div`
   height: 100dvh;
-  background: url(${img}) no-repeat;
-  background-position: right top;
-  background-color: #0c0c0c;
+  /* background: url(${img}) no-repeat; */
+  /* background-position: right top; */
+  background-color: #000;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 `;
@@ -275,12 +275,13 @@ export const ExpAndTitleContainer = styled.div`
 export const AboutContainer = styled.div`
   display: flex;
   align-items: center;
-  /* padding: 200px 0px 0px 0px;   */
-  height: 100dvh;
+  padding: 0px 0px 0px 100px;  
+  /* height: 100dvh; */
   justify-content: center;
+  /* background-color: #000; */
   @media(max-width: 675px) {
     flex-direction: column;
-    padding: 40px 20px 0px 20px;
+    padding: 150px 20px 0px 20px;
     justify-content: center;
   }
 `
@@ -325,7 +326,7 @@ export const BoldText = styled.h1`
 export const AboutMeText = styled.p`
   font-family: 'Roboto Flex';
   font-weight: 200;
-  font-size: var(--font-l); 
+  font-size: var(--font-n); 
   color: #c1c1c1;
   @media(max-width: 675px) {
     text-align: center;
