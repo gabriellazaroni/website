@@ -296,7 +296,7 @@ export const AboutContainer = styled.div`
   padding: 200px 0px 0px 100px;
   @media(max-width: 675px) {
     flex-direction: column;
-    padding: 140px 20px;  
+    padding: 140px 20px 0 20px;  
   }
 `
 
