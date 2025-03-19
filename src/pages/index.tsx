@@ -190,130 +190,16 @@ export const HomePage = () => {
           </WelcomeAndIconContainer>
         </SecondContainer>
       </MainContainer>
-      <MainContainer ref={aboutSectionHomeRef}>
-        <MenuContainer>
-          <HeaderMenu
-            initial={{ opacity: 0, y: -150 }}
-            animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : -100 }}
-            transition={{ duration: 1, ease: 'easeInOut', delay: 4.8 }}
-            isVisible={showMenu}
-          >
-            <IconContainer onClick={handleScrollToHome}>
-              <Icon src={homeIcon} />
-            </IconContainer>
-            <IconContainer onClick={handleScrollToAbout}>
-              <Icon src={infoIcon} />
-            </IconContainer>
-            <IconContainer>
-              <Icon src={projectsIcon} />
-            </IconContainer>
-            <IconContainer>
-              <Icon src={toolsIcon} />
-            </IconContainer>
-            <IconContainer>
-              <Icon src={expIcon} />
-            </IconContainer>
-            {/* <IconContainer>
-              <Icon src={questionsIcon} />
-            </IconContainer> */}
-            <IconContainer>
-              <Icon src={contactIcon} />
-            </IconContainer>
-          </HeaderMenu>
-        </MenuContainer>
-        <ExpAndTitleContainer>
-          <TitleContainer>
-            <CubeAndTitleContainer>
-              <TitleText
-                isVisible={showMenu}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
-                transition={{ duration: 0.8, ease: 'easeInOut', delay: 1.2 }}
-              >
-                Frontend Developer
-              </TitleText>
-              <CubeContainer
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
-                transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
-                isVisible={showMenu}
-              >
-                <MediumRotatingCube />
-              </CubeContainer>
-            </CubeAndTitleContainer>
-            <SubTitleText
-              isVisible={showMenu}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
-              transition={{ duration: 0.8, ease: 'easeInOut', delay: 1.2 }}
-            >
-              Hi! I'm Gabriel. A creative Frontend Developer with 3+ years of experience
-              in building high-performance, scalable, and responsive web solutions.
-            </SubTitleText>
-          </TitleContainer>
-          <ExpProjectsHoursContainer>
-            <ExpContainer
-              isVisible={showMenu}
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
-              transition={{ duration: 0.8, ease: 'easeInOut', delay: 2.4 }}
-            >
-              <NumberExpTitle isVisible={showMenu}>3+</NumberExpTitle>
-              <SubTitleText isVisible={showMenu}>
-                Years of Experience
-              </SubTitleText>
-            </ExpContainer>
-            <ExpContainer
-              isVisible={showMenu}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
-              transition={{ duration: 1, ease: 'easeInOut', delay: 3.6 }}
-            >
-              <NumberExpTitle isVisible={showMenu}>7+</NumberExpTitle>
-              <SubTitleText isVisible={showMenu}>
-                Completed Projects
-              </SubTitleText>
-            </ExpContainer>
-            <ExpContainer
-              isVisible={showMenu}
-              initial={{ opacity: 0, y: 25 }}
-              animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
-              transition={{ duration: 1, ease: 'easeInOut', delay: 4.8 }}
-            >
-              <NumberExpTitle isVisible={showMenu}>10k</NumberExpTitle>
-              <SubTitleText isVisible={showMenu}>
-                Hours Worked
-              </SubTitleText>
-            </ExpContainer>
-          </ExpProjectsHoursContainer>
-        </ExpAndTitleContainer>
-        <FlashEffect isFlashing={isFlashing} />
-        <SecondContainer isVisible={isSecondVisible}>
-          <NameContainer>
-            {['G', 'A', 'B', 'R', 'I', 'E', 'L', 'SPACE', 'A', 'U', 'G', 'U', 'S', 'T', 'O'].map((letter, index) => (
-              <AntonLetter key={index} delay={index * 0.1}>
-                {letter === 'SPACE' ? <span>&nbsp;</span> : letter}
-              </AntonLetter>
-            ))}
-          </NameContainer>
-          <CubeContainer>
-            <LargeRotatingCube />
-          </CubeContainer>
-          <WelcomeAndIconContainer>
-            <NameContainer>
-              {['W', 'E', 'L', 'C', 'O', 'M', 'E'].map((letter, index) => (
-                <Letter key={index} delay={index * 0.1}>{letter}</Letter>
-              ))}
-            </NameContainer>
-            <div className="animated-content">
-              <ArrowIcon onClick={handleHideSecondContainer} src={arrowtIcon} alt="" />
-            </div>
-          </WelcomeAndIconContainer>
-        </SecondContainer>
-      </MainContainer>
-
       <MainContainer ref={aboutSectionRef}>
         <AboutContainer>
+          <CubeContainer
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
+            transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
+            isVisible={showMenu}
+          >
+            <MediumRotatingCube />
+          </CubeContainer>
           <AbountText>
             I believe in a user centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users.
             <AboutDescriptionContainer>
@@ -328,14 +214,7 @@ export const HomePage = () => {
               </AboutMeText>
             </AboutDescriptionContainer>
           </AbountText>
-          <CubeContainer
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: showMenu ? 1 : 0, y: showMenu ? 0 : 50 }}
-            transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
-            isVisible={showMenu}
-          >
-            <MediumRotatingCube />
-          </CubeContainer>
+
         </AboutContainer>
       </MainContainer>
     </BackgroundContainer >
